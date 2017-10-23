@@ -41,7 +41,7 @@ public class OculusControllerInput : MonoBehaviour
     void Update()
     {
 
-        device = SteamVR_Controller.Input((int)trackedObj.index);
+       device = SteamVR_Controller.Input((int)trackedObj.index);
         if (OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger))
         {
             movementDirection = playerCam.transform.forward;

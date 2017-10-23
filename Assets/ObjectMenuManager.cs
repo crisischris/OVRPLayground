@@ -53,6 +53,7 @@ public class ObjectMenuManager : MonoBehaviour {
         Rigidbody rb = clone.GetComponent<Rigidbody>();
 
         rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
+        rb.mass = .01f;
 
        // loadLevel.Trigger();
     }
